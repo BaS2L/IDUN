@@ -1,0 +1,7 @@
+.main_container {
+  position: absolute;
+  width: calc(100% - 500px);
+  left: 400px;
+  transition: 0.5s;
+  margin-top: 100px;
+}

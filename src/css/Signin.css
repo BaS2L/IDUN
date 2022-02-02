@@ -1,0 +1,9 @@
+.Signin {
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.err {
+  color: #ff4d4d;
+}

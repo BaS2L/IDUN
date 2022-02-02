@@ -1,0 +1,30 @@
+.mem_view {
+  position: relative;
+  display: grid;
+  min-height: 500px;
+  padding: 20px;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  background: var(--white);
+}
+.mem_view table tbody tr:hover {
+  background: var(--blue);
+  color: var(--white);
+}
+
+.mem_view table tr td {
+  padding: 12px 10px;
+}
+.mem_view table tr td h4 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.mem_view table tr td h4 span {
+  font-size: 14px;
+  color: var(--black2);
+}
+
+.mem_view table tr:hover td h4 span {
+  color: var(--white);
+}

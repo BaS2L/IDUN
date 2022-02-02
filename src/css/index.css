@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Ubuntu:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --background: #e1e6ec;
+  --blue: #287bff;
+  --white: #fff;
+  --grey: #f5f5f5;
+  --black1: #222;
+  --black2: #999;
+  --red: #ff2828;
+  --green: #00c00a;
+  --font: #333;
+  --font-color-gray: #667;
+  --date: #666677;
+  --linear-color: #f3f4f8;
+  --timeblock-color: #f3f4f8;
+  --font-main: #667;
+  --division-color: #f8f9fa;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif, "Ubuntu", sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+  /* cursor: url(../assets/cursor/cursor.cur), auto; */
+  background: var(--background);
+  color: var(--font);
+}
+iframe {
+  border: 0;
+}
+
+@media (max-width: 991px) {
+  .navigation {
+    left: -300px;
+  }
+  .navigation .active {
+    left: 0;
+  }
+  .main_container {
+    width: 100%;
+    left: 0;
+  }
+  .main_container .active {
+    left: 300px;
+  }
+  .Signin {
+    left: 50%;
+    transform: scale(0.6);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--grey);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--blue);
+}
+
+/* 커스텀 커서 */
+/* .StaView:hover,
+.adminEdit:hover,
+.adminDelete:hover,
+.toggleBtn:hover,
+a:hover,
+button:hover {
+  animation: link_cursor 0.54s infinite;
+} */
+
+@keyframes link_cursor {
+  0% {
+    cursor: url(../assets/cursor/cursor.cur), auto;
+  }
+
+  22.22% {
+    cursor: url(../assets/cursor/cursor2.cur), auto;
+  }
+
+  50% {
+    cursor: url(../assets/cursor/cursor.cur), auto;
+  }
+
+  77.77% {
+    cursor: url(../assets/cursor/cursor2.cur), auto;
+  }
+
+  100% {
+    cursor: url(../assets/cursor/cursor.cur), auto;
+  }
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
+
+.cardHeader h2 {
+  font-weight: 600;
+  color: var(--blue);
+}
